@@ -1,0 +1,33 @@
+.section {
+    width: $medida-section_ancho;
+    height: 100vh;
+    background-color: $color-section_fondo;
+    display: flex;
+    flex-direction: column;
+    .container-logo {
+        height: 5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0.3rem;
+        svg {
+            height: 4em;
+            width: auto;
+            .cls-1 {
+                fill: $color-logo_principal;
+            }
+            .cls-2 {
+                fill: $color-logo_secundario;
+            }
+            .cls-3 {
+                fill: $color-logo_slogan;
+            }
+        }
+    }
+    .container-menu {
+        height: 6em;
+    }
+    .container-logout {
+        height: 6em;
+    }
+}
