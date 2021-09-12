@@ -6,9 +6,14 @@
     font-size: 16px;
 }
 
+body {
+    overflow: hidden;
+}
+
 .contenedor-principal {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row-reverse;
+    overflow: hidden;
 }
