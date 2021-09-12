@@ -13,6 +13,8 @@
                         svg {
                             height: 3.3em;
                             width: auto;
+                            padding-bottom: 6px;
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.548);
                             .cls-1 {
                                 fill: $color-logo_principal;
                             }
@@ -62,6 +64,9 @@
                                         height: auto;
                                         width: 1rem;
                                         margin-right: 0.5rem;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
                                         svg {
                                             width: 100%;
                                             height: auto;
@@ -103,7 +108,7 @@
                             }
                         }
                         .menu-title {
-                            width: 90%;
+                            width: 82%;
                             height: 6%;
                             display: flex;
                             text-align: left;
