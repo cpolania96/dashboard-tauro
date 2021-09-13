@@ -33,15 +33,18 @@
                         padding-top: 0.6rem;
                         .menu-items {
                             height: 100%;
-                            width: 94%;
+                            width: 100%;
                             display: flex;
                             align-items: center;
                             flex-direction: column;
+                            font-weight: bold;
+                            padding-left: 0;
                             li {
                                 height: 7%;
                                 width: 84%;
                                 list-style: none;
                                 margin-bottom: 4px;
+                                font-weight: 100;
                                 a {
                                     height: 100%;
                                     width: 100%;
@@ -120,6 +123,7 @@
                                 font-size: 0.7rem;
                                 display: flex;
                                 align-items: center;
+                                margin: 0;
                             }
                         }
                     }

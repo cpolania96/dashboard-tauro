@@ -2,6 +2,314 @@
     position: relative;
     float: right;
     width: 100%;
+    display: flex;
+    align-items: center;
     height: $medida-header_alto;
     background-color: $color-header_fondo;
+    .collapse-button {
+        width: 3.2em;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-right: 5em;
+        button {
+            height: 70%;
+            width: 70%;
+            border: none;
+            border-radius: 0 6px 6px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: 1px solid white;
+            background-color: $color-expandbutton_fondo;
+            cursor: pointer;
+            svg {
+                width: 50%;
+                height: auto;
+                .cls-1 {
+                    fill: $color-expandbutton_icon-fill;
+                }
+            }
+        }
+    }
+    .header-search {
+        height: 56%;
+        width: 28%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        form,
+        .form-control,
+        button {
+            height: 100%;
+        }
+        form {
+            .form-control {
+                border: 1px solid red;
+                position: relative;
+                padding-left: 2.3rem;
+                margin-right: 0 !important;
+                border-radius: 8px 0 0 8px;
+                border-right: none;
+            }
+        }
+        span {
+            height: 100%;
+            width: 9%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0.28rem;
+            svg {
+                height: 1rem;
+                width: 1rem;
+                .cls-1 {
+                    fill: #6c757d;
+                }
+            }
+        }
+        button {
+            width: 33%;
+            color: red;
+            border: 1px solid red;
+            border-radius: 0 8px 8px 0;
+            &:hover {
+                background-color: red;
+                color: white;
+            }
+        }
+    }
+    .container-tools {
+        height: 100%;
+        width: 30%;
+        position: absolute;
+        right: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 2em;
+        li {
+            height: 54%;
+            list-style: none;
+        }
+        .notifications {
+            width: 2em;
+            height: 100%;
+            &:hover {
+                cursor: pointer;
+                .notifications-expanded {
+                    display: block;
+                    transition: 0.8s;
+                    cursor: default;
+                }
+            }
+            .icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                svg {
+                    height: auto;
+                    width: 58%;
+                    .cls-1 {
+                        fill: $color-notifications_icon;
+                    }
+                }
+                span {
+                    position: absolute;
+                    width: 0.8rem;
+                    height: 0.8rem;
+                    background-color: #FF2E25;
+                    right: 2px;
+                    top: 20px;
+                    border-radius: 50%;
+                    p {
+                        height: 100%;
+                        width: 100%;
+                        margin: 0;
+                        font-size: 0.7rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        @include roboto;
+                        color: $color-notifications_span-text;
+                    }
+                }
+            }
+            .notifications-expanded {
+                max-height: 14em;
+                width: 14em;
+                display: none;
+                position: absolute;
+                background-color: #fffdfdcc;
+                top: 4.4em;
+                transform: translate(-191px, 2px);
+                -webkit-box-shadow: 0px 10px 26px 6px rgba(108, 117, 125, 0.24);
+                box-shadow: 0px 10px 26px 6px rgba(108, 117, 125, 0.24);
+                border: 1px solid #e7ebf0;
+                border-radius: 5px 0 5px 5px;
+                @include roboto;
+                .options,
+                .view {
+                    width: 100%;
+                    height: 20%;
+                }
+                .options {
+                    display: flex;
+                    height: 15%;
+                    h5,
+                    span {
+                        display: flex;
+                        align-items: center;
+                    }
+                    h5 {
+                        font-size: 1rem;
+                        height: 100%;
+                        margin: 0;
+                        padding-left: 12px;
+                    }
+                    span {
+                        height: 100%;
+                        width: 69%;
+                        display: flex;
+                        justify-content: flex-end;
+                        padding-right: 12px;
+                        padding-top: 3px;
+                        a {
+                            height: 50%;
+                            width: 80%;
+                            display: flex;
+                            align-items: center;
+                            text-decoration: none;
+                            color: #1920FF;
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+                .content {
+                    width: 99%;
+                    height: 68%;
+                    overflow-y: scroll;
+                    padding-right: 3px;
+                    .cards {
+                        width: 100%;
+                        height: 2.8rem;
+                        margin-bottom: 1px;
+                        display: flex;
+                        .mini {
+                            height: 100%;
+                            width: 22%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .circle {
+                                width: 2rem;
+                                height: 2rem;
+                                border-radius: 50%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                svg {
+                                    width: 62%;
+                                    height: auto;
+                                    padding-left: 1.5px;
+                                    .cls-1 {
+                                        fill: white;
+                                    }
+                                }
+                            }
+                            .n1 {
+                                background-color: #FFDA40;
+                            }
+                            .n2 {
+                                background-color: #1920FF;
+                            }
+                            .n3 {
+                                background-color: rgba(255, 0, 0, 0.842);
+                            }
+                        }
+                        .card-content {
+                            height: 100%;
+                            display: flex;
+                            width: 76%;
+                            flex-direction: column;
+                            padding: 5px 0 5px 2px;
+                            color: $color-notifcards_font;
+                            h5,
+                            h6 {
+                                height: 100%;
+                                margin: 0;
+                                display: flex;
+                                align-items: center;
+                            }
+                            h5 {
+                                font-size: 0.9rem;
+                            }
+                            h6 {
+                                font-size: 0.7rem;
+                            }
+                        }
+                        &:hover {
+                            background-color: $color-notifcards_fill;
+                            cursor: pointer;
+                            h5,
+                            h6 {
+                                color: black;
+                            }
+                        }
+                    }
+                    &::-webkit-scrollbar {
+                        width: 10px;
+                        height: 100%;
+                    }
+                    &::-webkit-scrollbar-track {
+                        background: #f1f1f1;
+                        border-radius: 10px;
+                        box-shadow: inset 0 0 1px grey;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background: #ff2c259f;
+                        border-radius: 10px;
+                    }
+                }
+                .view {
+                    height: 17%;
+                    width: 100%;
+                    margin-top: 2px;
+                    &:hover {
+                        background-color: #ff2c25c0;
+                        a {
+                            color: white;
+                            transition: 0.2s;
+                        }
+                    }
+                    a {
+                        height: 100%;
+                        width: 100%;
+                        font-size: 0.8rem;
+                        text-decoration: none;
+                        @include roboto;
+                        color: rgba(104, 100, 100, 0.884);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        .settings {
+            width: 2em;
+            background-color: yellow;
+        }
+        .profile {
+            width: 10em;
+            height: 100%;
+            background-color: yellow;
+        }
+    }
 }
