@@ -525,3 +525,9 @@ p {
       width: auto; }
       .container-logout span svg .cls-1 {
         fill: white; }
+
+.aside {
+  position: fixed;
+  width: 80%;
+  height: 20%;
+  transform: translate(191px, 5px); }
