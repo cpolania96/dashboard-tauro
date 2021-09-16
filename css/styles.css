@@ -23,6 +23,11 @@ body {
 p {
   margin: 0; }
 
+.container-seccion_derecha {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
 .header {
   position: relative;
   float: right;
@@ -372,7 +377,7 @@ p {
             padding-top: 0.6rem;
             font-weight: bold; }
           .header .container-tools .profile a .profile-details .details-info h6 {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             padding-bottom: 0.6rem; }
 
 .section {
@@ -525,3 +530,8 @@ p {
       width: auto; }
       .container-logout span svg .cls-1 {
         fill: white; }
+
+.aside {
+  height: 100vh;
+  width: 100%;
+  background-color: red; }
