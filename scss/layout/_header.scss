@@ -43,6 +43,9 @@
         .form-control,
         button {
             height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         form {
             .form-control {
@@ -62,6 +65,7 @@
             justify-content: center;
             align-items: center;
             padding-left: 0.28rem;
+            left: 6px;
             svg {
                 height: 1rem;
                 width: 1rem;

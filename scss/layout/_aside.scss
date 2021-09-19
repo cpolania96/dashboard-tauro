@@ -1,5 +1,41 @@
 .aside {
     height: 100vh;
     width: 100%;
-    background-color: red;
+    .container-quickact {
+        width: 100%;
+        height: 3.5em;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        .quickact {
+            height: 80%;
+            width: 20%;
+            background-color: rgba(255, 0, 0, 0.486);
+            margin-left: 2em;
+            border: 1px solid red;
+            border-radius: 4px;
+            h6 {
+                height: 36%;
+                display: flex;
+                justify-content: center;
+                font-size: 0.8rem;
+                padding-top: 1px;
+                @include roboto;
+            }
+            ul {
+                height: 64%;
+                width: 100%;
+                display: flex;
+                margin: 0;
+                li {
+                    width: 33.3%;
+                    height: 100%;
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
 }
