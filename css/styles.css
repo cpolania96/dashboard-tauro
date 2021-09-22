@@ -34,7 +34,7 @@ p {
   width: 100%;
   display: flex;
   align-items: center;
-  height: 4.4em;
+  height: 10%;
   background-color: white; }
   .header .collapse-button {
     width: 3.2em;
@@ -536,7 +536,7 @@ p {
         fill: white; }
 
 .aside {
-  height: 100vh;
+  height: 90%;
   width: 100%; }
   .aside .container-header {
     width: 100%;
@@ -690,3 +690,27 @@ p {
           width: 60%; }
           .aside .container-header .datefilter .reload svg .cls-1 {
             fill: rgba(104, 100, 100, 0.884); }
+  .aside .container-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2em; }
+    .aside .container-content .content-grid {
+      width: 62em;
+      height: 25em;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "a1 a2 a3 a4 a4" "a5 a6 a7 a4 a4";
+      grid-gap: 0.5rem; }
+      .aside .container-content .content-grid .cards,
+      .aside .container-content .content-grid .c4 {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border: 1px solid rgba(104, 100, 100, 0.2); }
+      .aside .container-content .content-grid .c4 {
+        grid-column-start: a4;
+        grid-column-end: a4;
+        grid-row-start: a4;
+        grid-row-end: a4; }
