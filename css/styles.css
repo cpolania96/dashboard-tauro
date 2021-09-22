@@ -548,7 +548,7 @@ p {
     .aside .container-header .quickact {
       height: 80%;
       width: 13em;
-      background-color: rgba(255, 0, 0, 0.486);
+      background-color: rgba(255, 0, 0, 0.33);
       border: 1px solid red;
       border-radius: 4px; }
       .aside .container-header .quickact h6 {
@@ -610,7 +610,8 @@ p {
               font-family: 'Roboto', sans-serif; }
         .aside .container-header .quickact ul .icon a {
           height: 100%;
-          width: auto; }
+          width: auto;
+          position: relative; }
           .aside .container-header .quickact ul .icon a:hover .container-label {
             display: flex; }
           .aside .container-header .quickact ul .icon a svg {
@@ -618,6 +619,20 @@ p {
             width: 18px; }
             .aside .container-header .quickact ul .icon a svg .cls-1 {
               fill: rgba(104, 100, 100, 0.884); }
+          .aside .container-header .quickact ul .icon a span {
+            width: 12px;
+            height: 12px;
+            background-color: red;
+            position: absolute;
+            top: 0px;
+            right: -6px;
+            border-radius: 50%;
+            font-size: 0.6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding-left: 1px; }
     .aside .container-header .navpoint,
     .aside .container-header .datefilter {
       height: 100%; }
@@ -631,7 +646,47 @@ p {
         width: auto;
         margin: 0;
         font-family: 'Roboto', sans-serif;
-        font-weight: bold; }
+        font-weight: bold;
+        font-size: 1.2rem; }
     .aside .container-header .datefilter {
-      width: 12em;
-      background-color: yellow; }
+      width: 15em;
+      display: flex; }
+      .aside .container-header .datefilter .date,
+      .aside .container-header .datefilter .reload {
+        height: 100%; }
+      .aside .container-header .datefilter .date {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .aside .container-header .datefilter .date input {
+          height: 68%;
+          width: 94%;
+          border: none;
+          padding: 0 11px;
+          border-radius: 6px;
+          border: 1px solid red;
+          font-family: 'Roboto', sans-serif;
+          outline: none;
+          cursor: pointer; }
+      .aside .container-header .datefilter .reload {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .aside .container-header .datefilter .reload button {
+          width: 2rem;
+          height: 2rem;
+          border: 1px solid red;
+          border-radius: 7px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgba(255, 0, 0, 0.33); }
+          .aside .container-header .datefilter .reload button:hover {
+            background-color: rgba(255, 0, 0, 0.6); }
+        .aside .container-header .datefilter .reload svg {
+          height: auto;
+          width: 60%; }
+          .aside .container-header .datefilter .reload svg .cls-1 {
+            fill: rgba(104, 100, 100, 0.884); }

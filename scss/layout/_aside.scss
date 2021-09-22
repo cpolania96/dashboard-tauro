@@ -11,7 +11,7 @@
         .quickact {
             height: 80%;
             width: 13em;
-            background-color: rgba(255, 0, 0, 0.486);
+            background-color: rgba(255, 0, 0, 0.33);
             border: 1px solid red;
             border-radius: 4px;
             h6 {
@@ -82,6 +82,7 @@
                     a {
                         height: 100%;
                         width: auto;
+                        position: relative;
                         &:hover {
                             .container-label {
                                 display: flex;
@@ -93,6 +94,21 @@
                             .cls-1 {
                                 fill: $color-quickact_icon;
                             }
+                        }
+                        span {
+                            width: 12px;
+                            height: 12px;
+                            background-color: red;
+                            position: absolute;
+                            top: 0px;
+                            right: -6px;
+                            border-radius: 50%;
+                            font-size: 0.6rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: white;
+                            padding-left: 1px;
                         }
                     }
                 }
@@ -113,11 +129,60 @@
                 margin: 0;
                 @include roboto;
                 font-weight: bold;
+                font-size: 1.2rem;
             }
         }
         .datefilter {
-            width: 12em;
-            background-color: yellow;
+            width: 15em;
+            display: flex;
+            .date,
+            .reload {
+                height: 100%;
+            }
+            .date {
+                width: 75%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                input {
+                    height: 68%;
+                    width: 94%;
+                    border: none;
+                    padding: 0 11px;
+                    border-radius: 6px;
+                    border: 1px solid red;
+                    @include roboto;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+            .reload {
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button {
+                    width: 2rem;
+                    height: 2rem;
+                    border: 1px solid red;
+                    border-radius: 7px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(255, 0, 0, 0.33);
+                    &:hover {
+                        background-color: rgba(255, 0, 0, 0.6);
+                    }
+                }
+                svg {
+                    height: auto;
+                    width: 60%;
+                    .cls-1 {
+                        fill: rgba(104, 100, 100, 0.884);
+                    }
+                }
+            }
         }
     }
+    .container-content {}
 }
