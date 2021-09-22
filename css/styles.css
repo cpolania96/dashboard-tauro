@@ -34,7 +34,7 @@ p {
   width: 100%;
   display: flex;
   align-items: center;
-  height: 10%;
+  height: 4.2em;
   background-color: white; }
   .header .collapse-button {
     width: 3.2em;
@@ -60,7 +60,7 @@ p {
           fill: white; }
   .header .header-search {
     height: 56%;
-    width: 28%;
+    width: 20rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,7 +103,7 @@ p {
         color: white; }
   .header .container-tools {
     height: 100%;
-    width: 30%;
+    width: 23em;
     position: absolute;
     right: 0;
     margin: 0;
@@ -537,7 +537,8 @@ p {
 
 .aside {
   height: 90%;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .aside .container-header {
     width: 100%;
     height: 3.5em;
@@ -714,3 +715,51 @@ p {
         grid-column-end: a4;
         grid-row-start: a4;
         grid-row-end: a4; }
+
+footer {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+  footer .container-footer {
+    width: 69rem;
+    height: 1.6rem;
+    transform: translate(0px, 0px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(104, 100, 100, 0.493); }
+    footer .container-footer p,
+    footer .container-footer .container-links_info {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center; }
+      footer .container-footer p a,
+      footer .container-footer .container-links_info a {
+        height: 100%;
+        text-decoration: none;
+        color: rgba(104, 100, 100, 0.493); }
+        footer .container-footer p a:hover,
+        footer .container-footer .container-links_info a:hover {
+          color: rgba(104, 100, 100, 0.836); }
+      footer .container-footer p .about,
+      footer .container-footer .container-links_info .about {
+        width: 9rem; }
+      footer .container-footer p .help,
+      footer .container-footer .container-links_info .help {
+        width: 3rem; }
+      footer .container-footer p .contact_us,
+      footer .container-footer .container-links_info .contact_us {
+        width: 6.5rem; }
+    footer .container-footer p {
+      width: 25rem; }
+    footer .container-footer .container-links_info {
+      width: 21em; }
