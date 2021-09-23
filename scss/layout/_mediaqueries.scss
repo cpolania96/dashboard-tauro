@@ -1,0 +1,93 @@
+@media screen and (max-device-width: 2560px) {
+    .aside > .container-content > .content-grid {
+        width: 75em;
+        height: 28em;
+    }
+
+    footer {
+        bottom: 13px;
+    }
+}
+@media screen and (max-device-width: 1440px) {
+    .container-seccion_derecha {
+        width: 86%;
+        .aside > .container-content > .content-grid {
+            width: 67em;
+            height: 23em;
+        }
+        footer {
+            bottom: 18px;
+            .container-footer {
+                width: 70rem;
+            }
+        }
+    }
+    .section {
+        width: 13.1em;
+    }
+}
+@media screen and (max-device-width: 1024px) {
+    .container-seccion_derecha {
+        width: 81%;
+        .aside > .container-content > .content-grid {
+            width: 47em;
+            height: 19em;
+        }
+        footer {
+            bottom: 16px;
+            .container-footer {
+                width: 48rem;
+                p {
+                    font-size: 0.9rem;
+                }
+                .container-links_info {
+                    width: 18.5em;
+                    a {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+    .section {
+        width: 12.5em;
+        .container-menu > .menu-items > li > a {
+            font-size: 0.9rem;
+        }
+    }
+}
+@media screen and (max-device-width: 768px) {
+    .contenedor-principal {
+        .container-seccion_derecha {
+            width: 77%;
+            .header .container-tools .profile a .profile-details .details-name h5 {
+                .header {
+                    height: 3.8em;
+                    .collapse-button {
+                        margin-right: 1.3em;
+                    }
+                    .header-search {
+                        width: 16rem;
+                        height: 66%;
+                    }
+                    .container-tools {
+                        width: 17em;
+                        padding-right: 0.9em;
+                        .profile {
+                            width: 8em;
+                            a {
+                                .profile-details {
+                                    .details-name {
+                                        h5 {
+                                            font-size: 0.8rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
