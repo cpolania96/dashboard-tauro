@@ -750,7 +750,10 @@ footer {
       footer .container-footer .container-links_info a {
         height: 100%;
         text-decoration: none;
-        color: rgba(104, 100, 100, 0.493); }
+        color: rgba(104, 100, 100, 0.493);
+        display: flex;
+        justify-content: center;
+        align-items: center; }
         footer .container-footer p a:hover,
         footer .container-footer .container-links_info a:hover {
           color: rgba(104, 100, 100, 0.836); }
@@ -778,22 +781,26 @@ footer {
 @media screen and (max-device-width: 1440px) {
   .container-seccion_derecha {
     width: 86%; }
-    .container-seccion_derecha .aside > .container-content > .content-grid {
-      width: 67em;
-      height: 23em; }
+    .container-seccion_derecha .aside > .container-content {
+      padding-top: 1rem; }
+      .container-seccion_derecha .aside > .container-content .content-grid {
+        width: 67em;
+        height: 23em; }
     .container-seccion_derecha footer {
       bottom: 18px; }
       .container-seccion_derecha footer .container-footer {
-        width: 70rem; }
+        width: 68rem; }
   .section {
     width: 13.1em; } }
 
 @media screen and (max-device-width: 1024px) {
   .container-seccion_derecha {
     width: 81%; }
-    .container-seccion_derecha .aside > .container-content > .content-grid {
-      width: 47em;
-      height: 19em; }
+    .container-seccion_derecha .aside > .container-content {
+      padding-top: 3rem; }
+      .container-seccion_derecha .aside > .container-content .content-grid {
+        width: 47em;
+        height: 19em; }
     .container-seccion_derecha footer {
       bottom: 16px; }
       .container-seccion_derecha footer .container-footer {
@@ -811,18 +818,68 @@ footer {
 
 @media screen and (max-device-width: 768px) {
   .contenedor-principal .container-seccion_derecha {
-    width: 77%; }
-    .contenedor-principal .container-seccion_derecha .header .container-tools .profile a .profile-details .details-name h5 .header {
-      height: 3.8em; }
-      .contenedor-principal .container-seccion_derecha .header .container-tools .profile a .profile-details .details-name h5 .header .collapse-button {
+    width: 78%; }
+    .contenedor-principal .container-seccion_derecha .aside .container-header {
+      height: 3.5rem;
+      padding: 0 10px; }
+      .contenedor-principal .container-seccion_derecha .aside .container-header .quickact {
+        width: 12rem; }
+      .contenedor-principal .container-seccion_derecha .aside .container-header .navpoint h6 {
+        font-size: 1rem; }
+      .contenedor-principal .container-seccion_derecha .aside .container-header .datefilter {
+        width: 14rem; }
+        .contenedor-principal .container-seccion_derecha .aside .container-header .datefilter .reload {
+          width: 20%; }
+    .contenedor-principal .container-seccion_derecha .aside .container-content {
+      padding-top: 3rem; }
+      .contenedor-principal .container-seccion_derecha .aside .container-content .content-grid {
+        width: 34em;
+        height: 14em; }
+    .contenedor-principal .container-seccion_derecha .header {
+      height: 3.6em; }
+      .contenedor-principal .container-seccion_derecha .header .collapse-button {
         margin-right: 1.3em; }
-      .contenedor-principal .container-seccion_derecha .header .container-tools .profile a .profile-details .details-name h5 .header .header-search {
+      .contenedor-principal .container-seccion_derecha .header .header-search {
         width: 16rem;
         height: 66%; }
-      .contenedor-principal .container-seccion_derecha .header .container-tools .profile a .profile-details .details-name h5 .header .container-tools {
-        width: 17em;
+      .contenedor-principal .container-seccion_derecha .header .container-tools {
+        width: 15.5rem;
         padding-right: 0.9em; }
-        .contenedor-principal .container-seccion_derecha .header .container-tools .profile a .profile-details .details-name h5 .header .container-tools .profile {
-          width: 8em; }
-          .contenedor-principal .container-seccion_derecha .header .container-tools .profile a .profile-details .details-name h5 .header .container-tools .profile a .profile-details .details-name h5 {
-            font-size: 0.8rem; } }
+        .contenedor-principal .container-seccion_derecha .header .container-tools .profile {
+          width: 7.8em; }
+          .contenedor-principal .container-seccion_derecha .header .container-tools .profile a .profile-photo .miniature {
+            height: 1.5rem;
+            width: 1.5rem;
+            font-size: 0.8rem; }
+          .contenedor-principal .container-seccion_derecha .header .container-tools .profile a .profile-details .details-name h5 {
+            font-size: 0.77rem; }
+          .contenedor-principal .container-seccion_derecha .header .container-tools .profile a .profile-details .details-info h6 {
+            font-size: 0.55rem; }
+  .contenedor-principal footer {
+    bottom: 16px; }
+    .contenedor-principal footer .container-footer {
+      width: 34rem; }
+      .contenedor-principal footer .container-footer p {
+        font-size: 0.7rem; }
+      .contenedor-principal footer .container-footer .container-links_info {
+        width: 14rem; }
+        .contenedor-principal footer .container-footer .container-links_info a {
+          font-size: 0.7rem; }
+  .section {
+    width: 10.7rem; }
+    .section .container-menu .menu-items > li > a {
+      font-size: 0.78rem; }
+    .section .container-logout button {
+      font-size: 0.97rem; }
+      .section .container-logout button span {
+        display: flex;
+        align-items: center; } }
+
+@media screen and (max-device-width: 425px) {
+  .contenedor-principal .container-seccion_derecha {
+    width: 100%; }
+  .contenedor-principal .section {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: none; } }

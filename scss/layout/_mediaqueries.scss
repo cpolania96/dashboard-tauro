@@ -11,14 +11,17 @@
 @media screen and (max-device-width: 1440px) {
     .container-seccion_derecha {
         width: 86%;
-        .aside > .container-content > .content-grid {
-            width: 67em;
-            height: 23em;
+        .aside > .container-content {
+            padding-top: 1rem;
+            .content-grid {
+                width: 67em;
+                height: 23em;
+            }
         }
         footer {
             bottom: 18px;
             .container-footer {
-                width: 70rem;
+                width: 68rem;
             }
         }
     }
@@ -29,9 +32,12 @@
 @media screen and (max-device-width: 1024px) {
     .container-seccion_derecha {
         width: 81%;
-        .aside > .container-content > .content-grid {
-            width: 47em;
-            height: 19em;
+        .aside > .container-content {
+            padding-top: 3rem;
+            .content-grid {
+                width: 47em;
+                height: 19em;
+            }
         }
         footer {
             bottom: 16px;
@@ -59,28 +65,65 @@
 @media screen and (max-device-width: 768px) {
     .contenedor-principal {
         .container-seccion_derecha {
-            width: 77%;
-            .header .container-tools .profile a .profile-details .details-name h5 {
-                .header {
-                    height: 3.8em;
-                    .collapse-button {
-                        margin-right: 1.3em;
+            width: 78%;
+            .aside {
+                .container-header {
+                    height: 3.5rem;
+                    padding: 0 10px;
+                    .quickact {
+                        width: 12rem;
                     }
-                    .header-search {
-                        width: 16rem;
-                        height: 66%;
+                    .navpoint {
+                        h6 {
+                            font-size: 1rem;
+                        }
                     }
-                    .container-tools {
-                        width: 17em;
-                        padding-right: 0.9em;
-                        .profile {
-                            width: 8em;
-                            a {
-                                .profile-details {
-                                    .details-name {
-                                        h5 {
-                                            font-size: 0.8rem;
-                                        }
+                    .datefilter {
+                        width: 14rem;
+                        .reload {
+                            width: 20%;
+                        }
+                    }
+                }
+                .container-content {
+                    padding-top: 3rem;
+                    .content-grid {
+                        width: 34em;
+                        height: 14em;
+                    }
+                }
+            }
+            .header {
+                height: 3.6em;
+                .collapse-button {
+                    margin-right: 1.3em;
+                }
+                .header-search {
+                    width: 16rem;
+                    height: 66%;
+                }
+                .container-tools {
+                    width: 15.5rem;
+                    padding-right: 0.9em;
+                    .profile {
+                        width: 7.8em;
+                        a {
+                            .profile-photo {
+                                .miniature {
+                                    height: 1.5rem;
+                                    width: 1.5rem;
+                                    font-size: 0.8rem;
+                                }
+                            }
+                            .profile-details {
+                                .details-name {
+                                    h5 {
+                                        font-size: 0.77rem;
+                                    }
+                                }
+                                .details-info {
+                                    h6 {
+                                        font-size: 0.55rem;
                                     }
                                 }
                             }
@@ -88,6 +131,55 @@
                     }
                 }
             }
+        }
+        footer {
+            bottom: 16px;
+            .container-footer {
+                width: 34rem;
+                p {
+                    font-size: 0.7rem;
+                }
+                .container-links_info {
+                    width: 14rem;
+                    a {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+    .section {
+        width: 10.7rem;
+        .container-menu {
+            .menu-items > li > a {
+                font-size: 0.78rem;
+            }
+        }
+        .container-logout {
+            button {
+                font-size: 0.97rem;
+                span {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-device-width: 425px) {
+    .contenedor-principal {
+        .container-seccion_derecha {
+            width: 100%;
+            .header {
+                .collapse-button {
+                }
+            }
+        }
+        .section {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            display: none;
         }
     }
 }
