@@ -21,7 +21,7 @@
         footer {
             bottom: 18px;
             .container-footer {
-                width: 68rem;
+                width: 66rem;
             }
         }
     }
@@ -172,6 +172,97 @@
             width: 100%;
             .header {
                 .collapse-button {
+                    margin-right: 0;
+                }
+                .header-search {
+                    display: none;
+                }
+                .container-tools {
+                    .notifications {
+                        .notifications-expanded {
+                            transform: translate(-69px, -8px);
+                        }
+                    }
+                }
+            }
+            .aside {
+                .container-header {
+                    .quickact {
+                        width: 8rem;
+                        ul {
+                            .container-label {
+                                display: none;
+                            }
+                        }
+                    }
+                    .navpoint {
+                    }
+                    .datefilter {
+                        width: 8rem;
+                        .date {
+                            width: 60%;
+                        }
+                        .reload {
+                            width: 29%;
+                        }
+                    }
+                }
+                .container-content {
+                    padding: 1rem 1rem 1rem;
+                    overflow: scroll;
+                    height: 22.5rem;
+                    .content-grid {
+                        height: 27em;
+                        grid-template-columns: 100%;
+                        grid-template-rows: repeat(25, 1fr);
+                        .c1,
+                        .c2,
+                        .c3,
+                        .c4,
+                        .c5,
+                        .c6,
+                        .c7 {
+                            grid-column-start: 1;
+                            grid-column-end: 2;
+                        }
+                        .c1 {
+                            grid-row-start: 1;
+                            grid-row-end: 5;
+                        }
+                        .c2 {
+                            grid-row-start: 5;
+                            grid-row-end: 9;
+                        }
+                        .c3 {
+                            grid-row-start: 9;
+                            grid-row-end: 13;
+                        }
+                        .c4 {
+                            grid-row-start: 13;
+                            grid-row-end: 24;
+                        }
+                        .c5 {
+                            grid-row-start: 24;
+                            grid-row-end: 30;
+                        }
+                        .c6 {
+                            grid-row-start: 30;
+                            grid-row-end: 38;
+                        }
+                        .c7 {
+                            grid-row-start: 38;
+                            grid-row-end: 46;
+                        }
+                    }
+                }
+                footer {
+                    .container-footer {
+                        flex-direction: column;
+                        p {
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
                 }
             }
         }

@@ -173,7 +173,8 @@ p {
           height: 20%; }
         .header .container-tools .notifications .notifications-expanded .options {
           display: flex;
-          height: 15%; }
+          height: 15%;
+          background-color: white; }
           .header .container-tools .notifications .notifications-expanded .options h5,
           .header .container-tools .notifications .notifications-expanded .options span {
             display: flex;
@@ -789,7 +790,7 @@ footer {
     .container-seccion_derecha footer {
       bottom: 18px; }
       .container-seccion_derecha footer .container-footer {
-        width: 68rem; }
+        width: 66rem; }
   .section {
     width: 13.1em; } }
 
@@ -878,6 +879,65 @@ footer {
 @media screen and (max-device-width: 425px) {
   .contenedor-principal .container-seccion_derecha {
     width: 100%; }
+    .contenedor-principal .container-seccion_derecha .header .collapse-button {
+      margin-right: 0; }
+    .contenedor-principal .container-seccion_derecha .header .header-search {
+      display: none; }
+    .contenedor-principal .container-seccion_derecha .header .container-tools .notifications .notifications-expanded {
+      transform: translate(-69px, -8px); }
+    .contenedor-principal .container-seccion_derecha .aside .container-header .quickact {
+      width: 8rem; }
+      .contenedor-principal .container-seccion_derecha .aside .container-header .quickact ul .container-label {
+        display: none; }
+    .contenedor-principal .container-seccion_derecha .aside .container-header .datefilter {
+      width: 8rem; }
+      .contenedor-principal .container-seccion_derecha .aside .container-header .datefilter .date {
+        width: 60%; }
+      .contenedor-principal .container-seccion_derecha .aside .container-header .datefilter .reload {
+        width: 29%; }
+    .contenedor-principal .container-seccion_derecha .aside .container-content {
+      padding: 1rem 1rem 1rem;
+      overflow: scroll;
+      height: 22.5rem; }
+      .contenedor-principal .container-seccion_derecha .aside .container-content .content-grid {
+        height: 27em;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(25, 1fr); }
+        .contenedor-principal .container-seccion_derecha .aside .container-content .content-grid .c1,
+        .contenedor-principal .container-seccion_derecha .aside .container-content .content-grid .c2,
+        .contenedor-principal .container-seccion_derecha .aside .container-content .content-grid .c3,
+        .contenedor-principal .container-seccion_derecha .aside .container-content .content-grid .c4,
+        .contenedor-principal .container-seccion_derecha .aside .container-content .content-grid .c5,
+        .contenedor-principal .container-seccion_derecha .aside .container-content .content-grid .c6,
+        .contenedor-principal .container-seccion_derecha .aside .container-content .content-grid .c7 {
+          grid-column-start: 1;
+          grid-column-end: 2; }
+        .contenedor-principal .container-seccion_derecha .aside .container-content .content-grid .c1 {
+          grid-row-start: 1;
+          grid-row-end: 5; }
+        .contenedor-principal .container-seccion_derecha .aside .container-content .content-grid .c2 {
+          grid-row-start: 5;
+          grid-row-end: 9; }
+        .contenedor-principal .container-seccion_derecha .aside .container-content .content-grid .c3 {
+          grid-row-start: 9;
+          grid-row-end: 13; }
+        .contenedor-principal .container-seccion_derecha .aside .container-content .content-grid .c4 {
+          grid-row-start: 13;
+          grid-row-end: 24; }
+        .contenedor-principal .container-seccion_derecha .aside .container-content .content-grid .c5 {
+          grid-row-start: 24;
+          grid-row-end: 30; }
+        .contenedor-principal .container-seccion_derecha .aside .container-content .content-grid .c6 {
+          grid-row-start: 30;
+          grid-row-end: 38; }
+        .contenedor-principal .container-seccion_derecha .aside .container-content .content-grid .c7 {
+          grid-row-start: 38;
+          grid-row-end: 46; }
+    .contenedor-principal .container-seccion_derecha .aside footer .container-footer {
+      flex-direction: column; }
+      .contenedor-principal .container-seccion_derecha .aside footer .container-footer p {
+        display: flex;
+        justify-content: center; }
   .contenedor-principal .section {
     position: absolute;
     left: 0;
