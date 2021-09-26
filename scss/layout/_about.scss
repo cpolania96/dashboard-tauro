@@ -5,6 +5,7 @@
         }
     }
     .container-content {
+        
         .principal-content {
             h6 {
                 height: 10%;
@@ -26,6 +27,7 @@
                     width: 50%;
                     height: 100%;
                     padding: 1rem 0;
+                    @include roboto;
                 }
                 .container-image {
                     padding-left: 1rem;
@@ -48,5 +50,11 @@
                 }
             }
         }
+        .pc {
+            height: 16em !important;
+        }
+    }
+    .cc {
+        padding-top: 4rem !important;
     }
 }
