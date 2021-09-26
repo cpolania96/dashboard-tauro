@@ -1,0 +1,95 @@
+.contenedor-principal {
+    .container-seccion_derecha {
+        .aside {
+            .container-content {
+                justify-content: center;
+                padding-top: 1.5em;
+                .principal-content {
+                    width: 26em;
+                    height: 25em;
+                    border:  1px solid rgba(104, 100, 100, 0.589);
+                    padding: 0.8rem;
+                    border-radius: 6px;
+                    background-color: white;
+                    .container-image {
+                        height: 30%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .image {
+                            width: 6rem;
+                            height: 6rem;
+                            background-image: url(/src/img-1.png);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            border-radius: 50%;
+                        }
+                    }
+                    .data {
+                        height: 58%;
+                        width: 100%;
+                        color: rgba(104, 100, 100, 0.884);
+                        .points {
+                            height: 13%;
+                            display: flex;
+                            justify-content: center;
+                            margin-bottom: 0.7rem;
+                            h6 {
+                                height: 100%;
+                                width: 8rem;
+                                margin: 0;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: rgba(104, 100, 100, 0.87);
+                                padding-right: 0.8rem;
+                                @include roboto;
+                                font-weight: bold;
+                                span {
+                                    height: 100%;
+                                    width: 2rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    svg {
+                                        height: 1rem;
+                                        width: 1rem;
+                                        .cls-1 {
+                                            fill: #faeb18ef;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .info {
+                            height: 13%;
+                            padding-left: 2rem;
+                            span {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .buttons {
+                        height: 12%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        button {
+                            width: 15rem;
+                            height: 2rem;
+                            border: 1px solid #FF2E25;
+                            background-color: #ff2c25d7;
+                            @include roboto;
+                            border-radius: 4px;
+                            color: white;
+                            &:hover {
+                                transform: scale(0.99);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
