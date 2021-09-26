@@ -34,6 +34,7 @@
                             display: flex;
                             justify-content: center;
                             margin-bottom: 0.7rem;
+                            padding-right: 13px;
                             h6 {
                                 height: 100%;
                                 width: 8rem;
@@ -45,6 +46,7 @@
                                 padding-right: 0.8rem;
                                 @include roboto;
                                 font-weight: bold;
+                                font-size: 1rem;
                                 span {
                                     height: 100%;
                                     width: 2rem;
