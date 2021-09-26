@@ -1261,3 +1261,171 @@ footer {
       font-family: 'Roboto', sans-serif; }
       .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .form .button button:hover {
         transform: scale(0.98); }
+
+.contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content {
+  width: 42em;
+  position: relative; }
+  .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .add, .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .delete {
+    position: absolute;
+    width: 3rem;
+    height: 2rem;
+    top: 16;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .add button, .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .delete button {
+      width: 1.4rem;
+      height: 1.4rem;
+      border: none;
+      border-radius: 3px;
+      background-color: #ff2c25be;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .add button svg, .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .delete button svg {
+        height: 1rem;
+        width: 1.2rem; }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .add button svg .cls-1, .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .delete button svg .cls-1 {
+          fill: white; }
+  .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .add {
+    left: 15px; }
+  .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .delete {
+    right: 15px; }
+    .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .delete button svg {
+      width: 0.8rem; }
+  .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content h6 {
+    height: 12%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(104, 100, 100, 0.87); }
+  .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages {
+    width: 100%;
+    height: 88%;
+    display: flex; }
+    .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages,
+    .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .detail {
+      width: 50%;
+      height: 100%;
+      padding: 0.5rem; }
+    .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat 5, 1fr;
+      border: 1px solid rgba(104, 100, 100, 0.562); }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .card-mess {
+        height: 3.5rem;
+        display: flex;
+        border-top: 1px solid rgba(104, 100, 100, 0.15);
+        border-bottom: 0.5px solid rgba(104, 100, 100, 0.15); }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .card-mess .side-left,
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .card-mess .side-right {
+          height: 100%; }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .card-mess .side-left {
+          width: 20%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .card-mess .side-left .img {
+            width: 2.6rem;
+            height: 2.6rem;
+            background-color: black;
+            border-radius: 75%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: -5px;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .card-mess .side-left .img svg {
+              height: 1.5rem;
+              width: 2rem;
+              padding-left: 1px; }
+              .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .card-mess .side-left .img svg .cls-1 {
+                fill: rgba(104, 100, 100, 0.87); }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .card-mess .side-right {
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          padding: 6px 0; }
+          .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .card-mess .side-right .name,
+          .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .card-mess .side-right .mess {
+            height: 50%;
+            display: flex;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            color: rgba(104, 100, 100, 0.87); }
+          .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .card-mess .side-right .name {
+            font-weight: bold; }
+          .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .card-mess .side-right .mess {
+            font-size: 0.8rem;
+            padding-left: 7px; }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .card-mess:hover {
+          background-color: #ff2c2577;
+          cursor: pointer; }
+          .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .card-mess:hover .side-right .name,
+          .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .card-mess:hover .side-right .mess {
+            color: #000000b3; }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .c1 {
+        background-color: #ff2c2577; }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .c1 .side-right .name,
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .c1 .side-right .mess {
+          color: #000000b3; }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .c1 .side-left .img {
+          background-image: url("/src/ico-supervisor.ico"); }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .c2 .side-left .img {
+        background-image: url("/src/ico-camilarincon.ico"); }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .c3 .side-left .img {
+        background-image: url("/src/ico-secretaria.ico"); }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .c4 .side-left .img {
+        background-color: #ffffff;
+        border: 1px solid rgba(104, 100, 100, 0.5); }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .c5 .side-left .img {
+        background-image: url("/src/ico-logistica.ico"); }
+    .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .detail {
+      border-top: 1px solid rgba(104, 100, 100, 0.562);
+      border-right: 1px solid rgba(104, 100, 100, 0.562);
+      border-bottom: 1px solid rgba(104, 100, 100, 0.562);
+      display: flex;
+      flex-direction: column; }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .detail .header {
+        width: 100%;
+        height: 16%;
+        display: flex; }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .detail .header span,
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .detail .header h6 {
+          height: 100%;
+          margin: 0;
+          display: flex;
+          justify-content: left; }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .detail .header span {
+          width: 15%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .detail .header span .img {
+            height: 3rem;
+            width: 3rem;
+            background-image: url("/src/ico-supervisor.ico");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -17px;
+            border-radius: 50%; }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .detail .header h6 {
+          width: 80%;
+          margin: 0;
+          font-family: 'Roboto', sans-serif; }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .detail .header .time {
+          width: 9rem;
+          height: 100%; }
+          .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .detail .header .time h6 {
+            width: 100%;
+            height: 100%;
+            font-size: 0.7rem;
+            display: flex;
+            align-items: right; }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .detail .content {
+        height: 100%;
+        width: 100%;
+        padding: 1rem;
+        font-family: 'Roboto', sans-serif;
+        color: rgba(104, 100, 100, 0.925); }
