@@ -1129,3 +1129,43 @@ footer {
         color: white; }
         .contenedor-principal .container-seccion_derecha .aside .container-content .principal-content .buttons button:hover {
           transform: scale(0.99); }
+
+.aside .container-header .navpoint {
+  width: 11.6em; }
+
+.aside .container-content .principal-content h6 {
+  height: 10%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: 1.3rem; }
+
+.aside .container-content .principal-content .content-message {
+  width: 100%;
+  height: 90%;
+  display: flex; }
+  .aside .container-content .principal-content .content-message .container-image,
+  .aside .container-content .principal-content .content-message p {
+    width: 50%;
+    height: 100%;
+    padding: 1rem 0; }
+  .aside .container-content .principal-content .content-message .container-image {
+    padding-left: 1rem;
+    height: 100% !important;
+    display: flex;
+    align-items: center; }
+    .aside .container-content .principal-content .content-message .container-image .img {
+      width: 10rem;
+      height: 12rem;
+      background-image: url("/src/img-3.png");
+      background-size: 8rem;
+      background-repeat: no-repeat;
+      background-position: center center; }
+  .aside .container-content .principal-content .content-message p {
+    padding-right: 1rem;
+    font-size: 0.99rem;
+    font-family: 'Roboto', sans-serif; }

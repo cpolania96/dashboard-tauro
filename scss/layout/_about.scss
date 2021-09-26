@@ -1,0 +1,52 @@
+.aside {
+    .container-header {
+        .navpoint {
+            width: 11.6em;
+        }
+    }
+    .container-content {
+        .principal-content {
+            h6 {
+                height: 10%;
+                margin: 0;
+                @include roboto;
+                font-weight: bold;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                padding-left: 1rem;
+                font-size: 1.3rem;
+            }
+            .content-message {
+                width: 100%;
+                height: 90%;
+                display: flex;
+                .container-image,
+                p {
+                    width: 50%;
+                    height: 100%;
+                    padding: 1rem 0;
+                }
+                .container-image {
+                    padding-left: 1rem;
+                    height: 100% !important;
+                    display: flex;
+                    align-items: center;
+                    .img {
+                        width: 10rem;
+                        height: 12rem;
+                        background-image: url("/src/img-3.png");
+                        background-size: 8rem;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                    }
+                }
+                p {
+                    padding-right: 1rem;
+                    font-size: 0.99rem;
+                    @include roboto;
+                }
+            }
+        }
+    }
+}
