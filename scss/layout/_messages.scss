@@ -29,14 +29,15 @@
     }
     .add {
         left: 15px;
-    }
-    .delete {
-        right: 15px;
+        
         button {
             svg {
                 width: 0.8rem;
             }
         }
+    }
+    .delete {
+        right: 15px;
     }
     h6 {
         height: 12%;

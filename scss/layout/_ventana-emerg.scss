@@ -1,0 +1,172 @@
+.contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content {
+    width: 100%;
+    height: 30rem;
+    .form-header {
+        width: 100%;
+        height: 14%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        color: rgba(104, 100, 100, 0.979);
+        h2,
+        h3 {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        h2 {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 1rem;
+        }
+    }
+    .form {
+        height: 75%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        form {
+            width: 100%;
+            height: 34rem;
+            ul {
+                padding: 1rem;
+                li {
+                    height: 2rem;
+                    width: 100%;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-bottom: 5px;
+                    label,
+                    input,
+                    select,
+                    h6 {
+                        height: 100%;
+                    }
+                    label,
+                    h6 {
+                        width: 30%;
+                        font-weight: bold;
+                        @include roboto;
+                        font-size: 1rem;
+                        color: rgba(104, 100, 100, 0.925);
+                    }
+                    h6 {
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                        padding: 0;
+                    }
+                    input {
+                        width: 70%;
+                        outline: none;
+                        padding-left: 7px;
+                        border-right: 0;
+                        border-left: 0;
+                        border-top: 0;
+                        border-bottom: 1px solid rgba(104, 100, 100, 0.884);
+                    }
+                    select {
+                        width: 70%;
+                    }
+                    span {
+                        height: 100%;
+                        width: 30%;
+                        color: rgba(104, 100, 100, 0.884);
+                        @include roboto;
+                        font-weight: bold;
+                    }
+                }
+                .textarea {
+                    height: 10rem;
+                    textarea {
+                        height: 100%;
+                        resize: none;
+                        outline: none;
+                        padding: 0.8rem;
+                    }
+                }
+                .check {
+                    height: 3rem;
+                    padding-right: 12rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: left;
+                    span {
+                        width: 70%;
+                        height: 3rem;
+                        display: flex;
+                        align-items: center;
+                        margin-right: 20px;
+                    }
+                    input {
+                        width: 100%;
+                        height: 1rem;
+                        cursor: pointer;
+                    }
+                }
+                .pay {
+                    display: flex;
+                    flex-direction: column;
+                    height: 5rem;
+                    margin-bottom: 15px;
+                    h6,
+                    ul {
+                        width: 100%;
+                        height: 3rem;
+                    }
+                    ul {
+                        display: flex;
+                        padding: 0;
+                        li {
+                            width: 16.6%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            margin-right: 2px;
+                            @include roboto;
+                            span, input {
+                                height: 50%;
+                            }
+                            span {
+                                width: 100%;
+                                font-size: 0.8rem;
+                                display: flex;
+                                justify-content: center;
+                            }
+                            input {
+                                height: 18px;
+                                width: 100%;
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .inputs {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0.5rem;
+        input {
+            width: 6rem;
+            height: 2rem;
+            background-color: #FF2E25;
+            border: none;
+            border-radius: 1px;
+            @include roboto;
+            color: white;
+            &:hover {
+                transform: scale(0.98);
+            }
+        }
+    }
+}
