@@ -451,7 +451,8 @@ p {
           display: flex;
           align-items: center;
           padding-left: 0.5rem;
-          color: white; }
+          color: white;
+          text-decoration: none; }
           .section .container-menu .menu-items li a:hover {
             background-color: white;
             cursor: pointer;
@@ -716,6 +717,7 @@ p {
             fill: rgba(104, 100, 100, 0.884); }
   .aside .container-content {
     height: 100%;
+    height: 27rem;
     display: flex;
     justify-content: center;
     padding-top: 3em; }
@@ -1412,6 +1414,9 @@ footer {
       font-family: 'Roboto', sans-serif; }
       .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .form .button button:hover {
         transform: scale(0.98); }
+
+.contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .C8 {
+  overflow: hidden !important; }
 
 .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content {
   width: 42em;
