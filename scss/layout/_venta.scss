@@ -1,0 +1,300 @@
+
+.contenedor-principal> .container-seccion_derecha> .aside> .container-content {
+    position: relative;
+    .grid-ventas {
+        width: 44em;
+        height: 25em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "a1 a2 a4" "a5 a6 a7";
+        grid-gap: 0.5rem;
+        position: absolute;
+        left: 60px;
+        .cards,
+        .c4 {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border: 1px solid rgba(104, 100, 100, 0.2);
+        }
+        .cards {
+            height: 12rem;
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 1.5rem;
+            @include roboto;
+            color: rgba(104, 100, 100, 0.884);
+            .card-title,
+            .card-descript,
+            .card-comport {
+                width: 100%;
+                height: 26%;
+                margin: 0;
+                display: flex;
+                align-items: center;
+            }
+            .card-title {
+                font-size: 1.2rem;
+            }
+            .card-descript {
+                height: 44%;
+                font-size: 1.7rem;
+                font-weight: bold;
+            }
+            .card-comport {
+                flex-direction: column;
+                height: 28%;
+                display: flex;
+                align-items: center;
+                .label1,
+                .label2 {
+                    height: 50%;
+                }
+                .label1 {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    color: #0acf97;
+                    span {
+                        height: 100%;
+                        width: 1rem;
+                        margin-right: 0.4rem;
+                        svg {
+                            width: 1rem;
+                            height: 1rem;
+                            .cls-1 {
+                                fill: #0acf97;
+                            }
+                        }
+                    }
+                    h6 {
+                        width: 80%;
+                        height: 100%;
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        padding-top: 0.2rem;
+                    }
+                }
+            }
+            .info {
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                a {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    svg {
+                        height: 1rem;
+                        width: 1rem;
+                        .cls-1 {
+                            fill: red;
+                        }
+                    }
+                }
+            }
+        }
+        .c3 {
+            .card-comport {
+                .label1 {
+                    color: red;
+                    span {
+                        transform: rotate(180deg);
+                        svg {
+                            .cls-1 {
+                                fill: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .c5 {
+            .card-comport {
+                .label1 {
+                    color: red;
+                    span {
+                        svg {
+                            .cls-1 {
+                                fill: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .c6 {
+            .card-comport {
+                .label1 {
+                    span {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+    .detallado {
+        position: absolute;
+        top: 25px;
+        right: 15px;
+        height: 17rem;
+        width: 27%;
+        background-color: white;
+        border: 1px solid rgba(104, 100, 100, 0.48);
+        .canales {
+            height: 25%;
+            width: 100%;
+            display: flex;
+            .canales_detalle {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                select {
+                    width: 87%;
+                    font-size: 0.82rem;
+                    height: 60%;
+                    padding-left: 0.3rem;
+                    padding-bottom: 0.2rem;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    outline: none;
+                    margin-left: 0.6rem;
+                    @include roboto;
+                }
+            }
+            .canales_dia {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                select {
+                    width: 87%;
+                    height: 60%;
+                    font-size: 0.82rem;
+                    padding-left: 0.3rem;
+                    padding-bottom: 0.2rem;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    outline: none;
+                    margin-right: 0.6rem;
+                    @include roboto;
+                }
+            }
+        }
+        .total-ventas {
+            width: 100%;
+            height: 76%;
+            .valor {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-left: 0.2rem;
+                .v1 {
+                    height: 30%;
+                    width: 100%;
+                    display: flex;
+                    padding: 0 10px;
+                    .ventas {
+                        width: 70%;
+                        height: 100%;
+                        p {
+                            height: 50%;
+                            margin: 0;
+                            @include roboto;
+                            color: rgba(104, 100, 100, 0.884);
+                            strong {
+                                font-size: 0.7rem;
+                            }
+                        }
+                        &:last-child {
+                            font-size: 1.4rem;
+                            line-height: 1.5rem;
+                        }
+                    }
+                    .pedidos {
+                        font-weight: bold;
+                        color: rgba(104, 100, 100, 0.884);
+                    }
+                }
+                .grafica {
+                    height: 70%;
+                    width: 100%;
+                    padding: 5px 10px;
+                    h6 {
+                        height: 20%;
+                        width: 100%;
+                        margin: 0;
+                        font-size: 0.7rem;
+                        font-weight: bold;
+                        color: rgba(104, 100, 100, 0.884);
+                        @include roboto;
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                    }
+                    .container-graf {
+                        height: 80%;
+                        width: 100%;
+                        display: flex;
+                        .label, .graf {
+                            height: 100%;
+                        }
+                        .label {
+                            width: 30%;
+                            display: flex;
+                            flex-direction: column;
+                            span {
+                                width: 100%;
+                                height: 33.3%;
+                                font-size: 0.7rem;
+                                @include roboto;
+                                color: rgba(104, 100, 100, 0.884);
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+                        .graf {
+                            width: 70%;
+                            background-image: url(/src/grafica.png);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 118px;
+                        }
+                    }
+                }
+                .pedidos {
+                    width: 30%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: right;
+                    p {
+                        margin: 0;
+                        font-size: 0.7rem;
+                        margin-top: 0.35rem;
+                    }
+                }
+            }
+        }
+        .grafica {
+            width: 100%;
+            height: 28%;
+        }
+    }
+}

@@ -1602,3 +1602,235 @@ footer {
 .form::-webkit-scrollbar-thumb {
   background: #ff2c259f;
   border-radius: 10px; }
+
+.contenedor-principal > .container-seccion_derecha > .aside > .container-content {
+  position: relative; }
+  .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas {
+    width: 44em;
+    height: 25em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "a1 a2 a4" "a5 a6 a7";
+    grid-gap: 0.5rem;
+    position: absolute;
+    left: 60px; }
+    .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards,
+    .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .c4 {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      border: 1px solid rgba(104, 100, 100, 0.2); }
+    .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards {
+      height: 12rem;
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 1.5rem;
+      font-family: 'Roboto', sans-serif;
+      color: rgba(104, 100, 100, 0.884); }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards .card-title,
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards .card-descript,
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards .card-comport {
+        width: 100%;
+        height: 26%;
+        margin: 0;
+        display: flex;
+        align-items: center; }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards .card-title {
+        font-size: 1.2rem; }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards .card-descript {
+        height: 44%;
+        font-size: 1.7rem;
+        font-weight: bold; }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards .card-comport {
+        flex-direction: column;
+        height: 28%;
+        display: flex;
+        align-items: center; }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards .card-comport .label1,
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards .card-comport .label2 {
+          height: 50%; }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards .card-comport .label1 {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          color: #0acf97; }
+          .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards .card-comport .label1 span {
+            height: 100%;
+            width: 1rem;
+            margin-right: 0.4rem; }
+            .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards .card-comport .label1 span svg {
+              width: 1rem;
+              height: 1rem; }
+              .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards .card-comport .label1 span svg .cls-1 {
+                fill: #0acf97; }
+          .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards .card-comport .label1 h6 {
+            width: 80%;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            padding-top: 0.2rem; }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards .info {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        right: 5px; }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards .info a {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards .info a svg {
+            height: 1rem;
+            width: 1rem; }
+            .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .cards .info a svg .cls-1 {
+              fill: red; }
+    .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .c3 .card-comport .label1 {
+      color: red; }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .c3 .card-comport .label1 span {
+        transform: rotate(180deg); }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .c3 .card-comport .label1 span svg .cls-1 {
+          fill: red; }
+    .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .c5 .card-comport .label1 {
+      color: red; }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .c5 .card-comport .label1 span svg .cls-1 {
+        fill: red; }
+    .contenedor-principal > .container-seccion_derecha > .aside > .container-content .grid-ventas .c6 .card-comport .label1 span {
+      transform: rotate(180deg); }
+  .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    height: 17rem;
+    width: 27%;
+    background-color: white;
+    border: 1px solid rgba(104, 100, 100, 0.48); }
+    .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .canales {
+      height: 25%;
+      width: 100%;
+      display: flex; }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .canales .canales_detalle {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .canales .canales_detalle select {
+          width: 87%;
+          font-size: 0.82rem;
+          height: 60%;
+          padding-left: 0.3rem;
+          padding-bottom: 0.2rem;
+          border-radius: 4px;
+          cursor: pointer;
+          outline: none;
+          margin-left: 0.6rem;
+          font-family: 'Roboto', sans-serif; }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .canales .canales_dia {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .canales .canales_dia select {
+          width: 87%;
+          height: 60%;
+          font-size: 0.82rem;
+          padding-left: 0.3rem;
+          padding-bottom: 0.2rem;
+          border-radius: 4px;
+          cursor: pointer;
+          outline: none;
+          margin-right: 0.6rem;
+          font-family: 'Roboto', sans-serif; }
+    .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas {
+      width: 100%;
+      height: 76%; }
+      .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 0.2rem; }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor .v1 {
+          height: 30%;
+          width: 100%;
+          display: flex;
+          padding: 0 10px; }
+          .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor .v1 .ventas {
+            width: 70%;
+            height: 100%; }
+            .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor .v1 .ventas p {
+              height: 50%;
+              margin: 0;
+              font-family: 'Roboto', sans-serif;
+              color: rgba(104, 100, 100, 0.884); }
+              .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor .v1 .ventas p strong {
+                font-size: 0.7rem; }
+            .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor .v1 .ventas:last-child {
+              font-size: 1.4rem;
+              line-height: 1.5rem; }
+          .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor .v1 .pedidos {
+            font-weight: bold;
+            color: rgba(104, 100, 100, 0.884); }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor .grafica {
+          height: 70%;
+          width: 100%;
+          padding: 5px 10px; }
+          .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor .grafica h6 {
+            height: 20%;
+            width: 100%;
+            margin: 0;
+            font-size: 0.7rem;
+            font-weight: bold;
+            color: rgba(104, 100, 100, 0.884);
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: left;
+            align-items: center; }
+          .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor .grafica .container-graf {
+            height: 80%;
+            width: 100%;
+            display: flex; }
+            .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor .grafica .container-graf .label, .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor .grafica .container-graf .graf {
+              height: 100%; }
+            .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor .grafica .container-graf .label {
+              width: 30%;
+              display: flex;
+              flex-direction: column; }
+              .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor .grafica .container-graf .label span {
+                width: 100%;
+                height: 33.3%;
+                font-size: 0.7rem;
+                font-family: 'Roboto', sans-serif;
+                color: rgba(104, 100, 100, 0.884);
+                display: flex;
+                align-items: center; }
+            .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor .grafica .container-graf .graf {
+              width: 70%;
+              background-image: url(/src/grafica.png);
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: 118px; }
+        .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor .pedidos {
+          width: 30%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          text-align: right; }
+          .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor .pedidos p {
+            margin: 0;
+            font-size: 0.7rem;
+            margin-top: 0.35rem; }
+    .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .grafica {
+      width: 100%;
+      height: 28%; }
