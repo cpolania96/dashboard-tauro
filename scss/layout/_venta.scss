@@ -1,13 +1,13 @@
 
 .contenedor-principal> .container-seccion_derecha> .aside> .container-content {
     position: relative;
-    .grid-ventas {
+    .cont45 {
         width: 44em;
         height: 25em;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: "a1 a2 a4" "a5 a6 a7";
+        grid-template-areas: "a1 a2 a4" "a5 a6 a7" !important;
         grid-gap: 0.5rem;
         position: absolute;
         left: 60px;
