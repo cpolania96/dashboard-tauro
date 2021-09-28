@@ -1461,7 +1461,7 @@ footer {
     .aside .container-content .principal-content .content-message .container-image .img {
       width: 10rem;
       height: 12rem;
-      background-image: url("/src/img-3.png");
+      background-image: url(./src/img-3.png);
       background-size: 8rem;
       background-repeat: no-repeat;
       background-position: center center; }
