@@ -823,7 +823,7 @@ p {
           height: 20%;
           font-size: 1.5rem; }
         .aside .container-content .content-grid .c4 .grafica {
-          background-image: url(/src/grafica.png);
+          background-image: url(src/grafica.png);
           background-repeat: no-repeat;
           background-size: 23rem;
           margin-top: 1rem; }
@@ -1371,7 +1371,7 @@ footer {
       .contenedor-principal .container-seccion_derecha .aside .container-content .principal-content .container-image .image {
         width: 6rem;
         height: 6rem;
-        background-image: url(/src/img-1.png);
+        background-image: url(src/img-1.png);
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 50%; }
@@ -1592,7 +1592,7 @@ footer {
     margin: 0; }
   .contenedor-principal > .container-seccion_derecha > .aside > .container-content .contenedor-central .img {
     height: 60%;
-    background-image: url(/src/404.png);
+    background-image: url(src/404.png);
     background-repeat: no-repeat;
     background-size: 223px;
     background-position-x: center;
@@ -2105,7 +2105,7 @@ footer {
                 align-items: center; }
             .contenedor-principal > .container-seccion_derecha > .aside > .container-content .detallado .total-ventas .valor .grafica .container-graf .graf {
               width: 70%;
-              background-image: url(/src/grafica.png);
+              background-image: url(src/grafica.png);
               background-repeat: no-repeat;
               background-position: center;
               background-size: 118px; }
