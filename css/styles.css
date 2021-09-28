@@ -1371,7 +1371,7 @@ footer {
       .contenedor-principal .container-seccion_derecha .aside .container-content .principal-content .container-image .image {
         width: 6rem;
         height: 6rem;
-        background-image: url(/src/img-1.png);
+        background-image: url(./src/img-1.png);
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 50%; }
@@ -1815,16 +1815,16 @@ footer {
         .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .c1 .side-right .mess {
           color: #000000b3; }
         .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .c1 .side-left .img {
-          background-image: url("/src/ico-supervisor.ico"); }
+          background-image: url(./src/ico-supervisor.ico); }
       .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .c2 .side-left .img {
-        background-image: url("/src/ico-camilarincon.ico"); }
+        background-image: url(./src/ico-camilarincon.ico); }
       .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .c3 .side-left .img {
-        background-image: url("/src/ico-secretaria.ico"); }
+        background-image: url(./src/ico-secretaria.ico); }
       .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .c4 .side-left .img {
         background-color: #ffffff;
         border: 1px solid rgba(104, 100, 100, 0.5); }
       .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .messages .c5 .side-left .img {
-        background-image: url("/src/ico-logistica.ico"); }
+        background-image: url(./src/ico-logistica.ico); }
     .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .detail {
       border-top: 1px solid rgba(104, 100, 100, 0.562);
       border-right: 1px solid rgba(104, 100, 100, 0.562);
@@ -1849,7 +1849,7 @@ footer {
           .contenedor-principal > .container-seccion_derecha > .aside > .container-content > .principal-content .content-messages .detail .header span .img {
             height: 3rem;
             width: 3rem;
-            background-image: url("/src/ico-supervisor.ico");
+            background-image: url(./src/ico-supervisor.ico);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: -17px;
